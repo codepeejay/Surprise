@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify QR Code Scanner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .scanner-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .qr-code {
+            width: auto; /* Maintain aspect ratio */
+            height: 150px; /* Adjust height to fit Spotify code dimensions */
+            object-fit: contain; /* Ensures image fits without distortion */
+            border: 2px solid #1DB954;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .custom-picture {
+            width: 400px; /* Custom image width */
+            height: 400px;
+            object-fit: cover;
+            margin-top: 20px;
+            border: 2px solid #1DB954;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scanner-container">
+        <h1>Scan the Spotify Code</h1>
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/453857409_3652200581663799_8182936514793963437_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=TcyNpwkKGVAQ7kNvgHu8fpd&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFTl0OMFMS0lxlpTUU3IAHLlQf-Y7QN9wBGCoLq3miA-Q&oe=6700770D" alt="Spotify QR Code" class="qr-code">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/457742846_7531256476975809_593379875105070911_n.jpg?stp=dst-jpg_p180x540&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ELSp5xQj2loQ7kNvgFOVcjM&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGEsGvr1XHJe_XxQke35hnnw9rq4gDTYmg2tWRsYtBhDg&oe=67006D35" alt="Custom Picture" class="custom-picture">
+    </div>
+
+</body>
+</html>

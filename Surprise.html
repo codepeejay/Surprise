@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify QR Code Scanner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .scanner-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            max-width: 400px; /* Mas maliit na max width para sa mas katamtamang laki */
+        }
+
+        .qr-code {
+            width: 100%;
+            max-width: 200px; /* Mas maliit na laki ng QR code */
+            height: auto;
+            object-fit: contain;
+            border: 2px solid #1DB954;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .custom-picture {
+            width: 100%;
+            max-width: 350px; /* Mas maliit na maximum width para sa custom picture */
+            height: auto;
+            object-fit: contain;
+            margin-top: 20px;
+            border: 2px solid #1DB954;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scanner-container">
+        <h1>Scan the Spotify Code</h1>
+        <img src="https://instagram.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/457742846_7531256476975809_593379875105070911_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=4Jzl297Vd0cQ7kNvgHdMVi3&_nc_ht=instagram.fmnl17-3.fna&_nc_gid=AZWBlH931MZMvCUcwvwNFWI&oh=03_Q7cD1QEVD0HvFSdiCu-Ij4hq8P4m_ptw-ZHiUz6IYkk_nNNZRQ&oe=673134B5" alt="Spotify QR Code" class="qr-code">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/453857409_3652200581663799_8182936514793963437_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=agrhSRLvEr4Q7kNvgE_FrPu&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&_nc_gid=AuOs825X2E2ZWgsrc-kdmCp&oh=03_Q7cD1QEtZGH5phWuEpuyPJxyRouPrkhPzZu_YXItI7AFECNXFA&oe=67313E8D" alt="Custom Picture" class="custom-picture">
+    </div>
+
+</body>
+</html>
